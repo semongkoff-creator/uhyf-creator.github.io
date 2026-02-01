@@ -915,9 +915,11 @@
                 font-size: 16px;
             }
             
-            /* Audio player */
+            /* Audio player mobile - at top */
             .audio-player-container {
-                padding: 10px 15px;
+                top: 10px;
+                width: 85%;
+                padding: 8px 15px;
                 border-radius: 25px;
             }
             .audio-play-btn {
@@ -948,26 +950,26 @@
                 transform: none;
             }
         }
-        /* Audio Player */
-        .audio-player-container {
-            position: fixed;
-            bottom: 30px;
-            left: 50%;
-            transform: translateX(-50%);
-            background: linear-gradient(145deg, rgba(253, 251, 249, 0.95), rgba(245, 241, 235, 0.95));
-            backdrop-filter: blur(20px);
-            border: 1px solid rgba(180, 150, 120, 0.4);
-            border-radius: 50px;
-            padding: 15px 30px;
-            display: flex;
-            align-items: center;
-            gap: 20px;
-            box-shadow: 0 10px 40px rgba(80, 50, 30, 0.25);
-            z-index: 1000;
-            opacity: 0;
-            visibility: hidden;
-            transition: all 0.4s ease;
-        }
+            /* Audio player - TOP of screen */
+            .audio-player-container {
+                position: fixed;
+                top: 20px;
+                left: 50%;
+                transform: translateX(-50%);
+                background: linear-gradient(145deg, rgba(253, 251, 249, 0.95), rgba(245, 241, 235, 0.95));
+                backdrop-filter: blur(20px);
+                border: 1px solid rgba(180, 150, 120, 0.4);
+                border-radius: 50px;
+                padding: 12px 25px;
+                display: flex;
+                align-items: center;
+                gap: 15px;
+                box-shadow: 0 10px 40px rgba(80, 50, 30, 0.25);
+                z-index: 1000;
+                opacity: 0;
+                visibility: hidden;
+                transition: all 0.4s ease;
+            }
         .audio-player-container.active {
             opacity: 1;
             visibility: visible;
